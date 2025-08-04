@@ -21,4 +21,4 @@ A simple, responsive landing page built using HTML and CSS as part of my web dev
 - GitHub workflow and version control
 
 ## 🔗 Live Preview:
-(Add your GitHub Pages link here if you deploy it)
+[click here to view project live](https://aarjav-jain151.github.io/responsive-landing-pageT1/)
