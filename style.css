@@ -1,0 +1,172 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #333;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ccc;
+}
+
+/* HIDE CHECKBOX */
+#menu-toggle {
+  display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cta:hover {
+  background-color: #555;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.social-links a:hover {
+  color: #007BFF;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content, .hero-image {
+    max-width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 20px 0;
+    align-items: center;
+  }
+
+  #menu-toggle:checked + .hamburger + nav .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hero-content h2 {
+    font-size: 24px;
+  }
+
+  .cta {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  
+
+}
